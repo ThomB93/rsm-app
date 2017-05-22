@@ -1,0 +1,13 @@
+<div class="row">
+
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-laug-item
+      *ngFor="let laugEl of laugs"
+      [laug]="laugEl"
+      (laugSelected)="onLaugSelected(laugEl)"></app-laug-item>
+  </div>
+</div>
+
