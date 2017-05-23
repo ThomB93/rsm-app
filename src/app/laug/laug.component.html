@@ -1,14 +1,17 @@
 <div class="row">
-  <div class="col-md-5">
+  <div class="col-md-4">
     <app-laug-list
       (laugWasSelected)="selectedLaug = $event"></app-laug-list>
   </div>
-  <div class="col-md-7">
+  <div class="col-md-4">
     <app-laug-detail
       *ngIf="selectedLaug; else infoText"
       [laug]="selectedLaug"></app-laug-detail>
     <ng-template #infoText>
       <h2>Vælg venligst et laug!</h2>
     </ng-template>
+  </div>
+  <div class="col-md-4">
+    <app-frivillig-detaljer></app-frivillig-detaljer>
   </div>
 </div>
