@@ -11,6 +11,7 @@ import { LaugItemComponent } from './laug/laug-list/laug-item/laug-item.componen
 import { FrivilligComponent } from './frivillig/frivillig.component';
 import { FrivilligListComponent } from './frivillig/frivillig-list/frivillig-list.component';
 import { FrivilligItemComponent } from './frivillig/frivillig-list/frivillig-item/frivillig-item.component';
+import { FrivilligDetaljerComponent } from './frivillig/frivillig-detaljer/frivillig-detaljer.component';
 
 
 @NgModule({
@@ -23,6 +24,10 @@ import { FrivilligItemComponent } from './frivillig/frivillig-list/frivillig-ite
     FrivilligComponent,
     FrivilligListComponent,
     FrivilligItemComponent,
+<<<<<<< HEAD
+=======
+    FrivilligDetaljerComponent
+>>>>>>> 0d1220f272d4de34a690dac697dbfc04207674fc
   ],
   imports: [
     BrowserModule,
