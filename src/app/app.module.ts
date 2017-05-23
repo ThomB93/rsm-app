@@ -11,7 +11,7 @@ import { LaugItemComponent } from './laug/laug-list/laug-item/laug-item.componen
 import { FrivilligComponent } from './frivillig/frivillig.component';
 import { FrivilligListComponent } from './frivillig/frivillig-list/frivillig-list.component';
 import { FrivilligItemComponent } from './frivillig/frivillig-list/frivillig-item/frivillig-item.component';
-import { KortComponent } from './kort/kort.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +23,6 @@ import { KortComponent } from './kort/kort.component';
     FrivilligComponent,
     FrivilligListComponent,
     FrivilligItemComponent,
-    KortComponent
   ],
   imports: [
     BrowserModule,
