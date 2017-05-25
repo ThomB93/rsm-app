@@ -5,6 +5,7 @@ export class Frivillig {
   public address: string;
   public email: string;
   public phone: string;
+  public hours: number;
 
   constructor(id: number, firstName: string, lastName: string,
   adress: string, email: string, phone: string) {
