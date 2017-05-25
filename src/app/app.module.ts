@@ -24,10 +24,7 @@ import { FrivilligDetaljerComponent } from './frivillig/frivillig-detaljer/frivi
     FrivilligComponent,
     FrivilligListComponent,
     FrivilligItemComponent,
-<<<<<<< HEAD
-=======
     FrivilligDetaljerComponent
->>>>>>> 0d1220f272d4de34a690dac697dbfc04207674fc
   ],
   imports: [
     BrowserModule,
