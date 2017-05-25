@@ -7,7 +7,7 @@ import { Laug } from "app/laug/laug.model";
   styleUrls: ['./laug-item.component.css']
 })
 export class LaugItemComponent implements OnInit {
-@Input() laug: Laug;
+  @Input() laug: Laug;
   @Output() laugSelected = new EventEmitter<void>();
   constructor() { }
 
