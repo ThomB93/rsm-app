@@ -12,5 +12,7 @@ export class Frivillig {
     this.firstName = firstName;
     this.lastName = lastName;
     this.address = adress;
+    this.email = email;
+    this.phone = phone;
   }
 }

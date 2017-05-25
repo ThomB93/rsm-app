@@ -8,8 +8,8 @@ import { Frivillig } from "app/frivillig/frivillig.model";
 })
 export class FrivilligListComponent implements OnInit {
   frivillige: Frivillig[] = [
-    new Frivillig(1, "Hans", "Hansen"),
-    new Frivillig(2, "Jens", "Jensen")
+    new Frivillig(1, "Hans", "Hansen","Horsensvej", "hh@hotmil.com","12345678"),
+    new Frivillig(2, "Jens", "Jensen","Vejlevej","jj@hotmail.com","87654321")
   ];
   constructor() { }
 
