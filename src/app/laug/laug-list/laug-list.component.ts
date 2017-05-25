@@ -19,7 +19,7 @@ export class LaugListComponent implements OnInit {
   ngOnInit() {
   }
   onLaugSelected(laug: Laug) {
-   this.laugWasSelected.emit(laug);
+   this.laugWasSelected.emit(laug); //føre til laug.component.html
   }
 
 }
