@@ -13,7 +13,11 @@ export class FrivilligListComponent implements OnInit {
     new Frivillig(2, "Jens", "Jensen","Vejlevej","jj@hotmail.com","87654321"),
 
     new Frivillig(1, "Hans", "Hansen", "Hansvej 1", "hans@hansen.dk", "23445565"),
+<<<<<<< HEAD
     new Frivillig(2, "Jens", "Jensen", "Jensvej 2", "jens@jensen.dk", "12345789"),
+=======
+    new Frivillig(2, "Jens", "Jensen", "Jensvej 2", "jens@jensen.dk", "12345789")
+>>>>>>> 937e789c7d908ce18c6722bf34bc1a830393bc8a
   ];
   constructor() { }
 
