@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Laug } from "app/laug/laug.model";
+import {LaugService} from "app/laug.service";
 
 @Component({
   selector: 'app-laug-list',
@@ -8,15 +9,13 @@ import { Laug } from "app/laug/laug.model";
 })
 export class LaugListComponent implements OnInit {
 @Output() laugWasSelected = new EventEmitter<Laug>();
-  laugs: Laug[] = [
-    new Laug(1, 'Hestelaug', 'Hestelaug desc', './assets/images/hestesko.png'),
-    new Laug(2, 'Kirkelaug', 'Kirkelaug desc', './assets/images/kirke.png'),
-    new Laug(3, 'Møllelaug', 'Møllelaug desc', './assets/images/mølle.png'),
-    new Laug(4, 'Skibslaug', 'Skibslaug desc', './assets/images/skib.png')
-  ];
-  constructor() { }
+  laugs: any = [];
+  constructor(private laugService : LaugService) { }
 
   ngOnInit() {
+    this.laugService.getAllLaug().subscribe(laug => {
+      this.laugs = laug; //save posts in array
+    });
   }
   onLaugSelected(laug: Laug) {
    this.laugWasSelected.emit(laug); //føre til laug.component.html

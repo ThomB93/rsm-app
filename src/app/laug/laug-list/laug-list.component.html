@@ -3,10 +3,17 @@
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <app-laug-item
+    <!--<app-laug-item
       *ngFor="let laugEl of laugs"
       [laug]="laugEl"
-      (laugSelected)="onLaugSelected(laugEl)"></app-laug-item>
+      (laugSelected)="onLaugSelected(laugEl)">
+      </app-laug-item>-->
+      <ul>
+        <li *ngFor="let laug of laugs">
+          <p>{{laug.navn}}</p>
+          <p>{{laug.beskrivelse}}</p>
+        </li>
+      </ul>
   </div>
 </div>
 

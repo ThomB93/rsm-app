@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LaugComponent } from './laug/laug.component';
@@ -12,7 +13,19 @@ import { FrivilligComponent } from './frivillig/frivillig.component';
 import { FrivilligListComponent } from './frivillig/frivillig-list/frivillig-list.component';
 import { FrivilligItemComponent } from './frivillig/frivillig-list/frivillig-item/frivillig-item.component';
 import { FrivilligDetaljerComponent } from './frivillig/frivillig-detaljer/frivillig-detaljer.component';
+import { LaugService } from './laug.service';
 
+const ROUTES = [ //when going to root /, redirect to /posts
+  {
+    path: '',
+    redirectTo: 'laugs',
+    pathMatch: 'full'
+  },
+  {
+    path: 'laugs', //delare posts route
+    component: LaugListComponent
+  }
+];
 
 @NgModule({
   declarations: [
@@ -29,9 +42,10 @@ import { FrivilligDetaljerComponent } from './frivillig/frivillig-detaljer/frivi
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [LaugService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
