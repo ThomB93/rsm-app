@@ -10,5 +10,9 @@ export class LaugService {
     return this.http.get('/api/laugs')
       .map(res => res.json()); //call this function on each value from http get
   }
+  getAllFrivillige() {
+    return this.http.get('/api/frivillige')
+      .map(res => res.json()); //call this function on each value from http get
+  }
 
 }

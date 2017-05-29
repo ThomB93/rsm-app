@@ -10,11 +10,19 @@ import {LaugService} from "app/laug.service";
 export class LaugListComponent implements OnInit {
 @Output() laugWasSelected = new EventEmitter<Laug>();
   laugs: any = [];
+  modelLaugs: Laug[] = [];
+  frivillige: any = [];
   constructor(private laugService : LaugService) { }
 
   ngOnInit() {
     this.laugService.getAllLaug().subscribe(laug => {
       this.laugs = laug; //save posts in array
+    });
+    for(var i = 0; i < this.laugs.length; i++) {
+      this.modelLaugs.push(new Laug("sasdasd", "asdasd"))
+    }
+    this.laugService.getAllFrivillige().subscribe(frivillig => {
+      this.frivillige = frivillig; //save posts in array
     });
   }
   onLaugSelected(laug: Laug) {

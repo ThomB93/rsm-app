@@ -14,6 +14,16 @@
           <p>{{laug.beskrivelse}}</p>
         </li>
       </ul>
+      <ul>
+        <li *ngFor="let frivillig of frivillige">
+          <p>{{frivillig.fornavn}} {{frivillig.efternavn}}</p>
+          <p>{{frivillig.telefon}}</p>
+          <p>{{frivillig.addresse}}</p>
+          <p>{{frivillig.mail}}</p>
+          <p>{{frivillig.by}}</p>
+          <p>{{frivillig.postnr}}</p>
+        </li>
+      </ul>
   </div>
 </div>
 

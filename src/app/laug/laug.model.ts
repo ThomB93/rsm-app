@@ -1,13 +1,12 @@
 export class Laug {
   public id : number;
-  public name: string;
-  public description: string;
+  public navn: string;
+  public beskrivelse: string;
   public imagePath: string;
 
-  constructor(id : number, name: string, desc: string, imagePath: string) {
-    this.id = id;
-    this.name = name;
-    this.description = desc;
+  constructor(navn: string, beskrivelse: string) {
+    this.navn = navn;
+    this.beskrivelse = beskrivelse;
     this.imagePath = imagePath;
   }
 }
